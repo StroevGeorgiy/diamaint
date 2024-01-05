@@ -1,0 +1,183 @@
+.decore3 {
+    content: "";
+    position: absolute;
+    display: flex;
+    right: -180px;
+    bottom: -170px;
+    background: url(./../images/product/berry.png);
+    width: 1734px;
+    height: 1158px;
+    z-index: -3;
+    overflow: hidden;
+
+    @include media900 {
+        display: none;
+    }
+}
+
+.blur-top {
+    content: "";
+    position: absolute;
+
+    overflow: hidden;
+    right: -30%;
+    bottom: 0px;
+    width: 1590px;
+    height: 526px;
+    transform: translatey(50%);
+    background: #FFF;
+    filter: blur(75px);
+
+
+    @include media900 {
+        display: none;
+    }
+}
+
+.product__inner {
+    display: flex;
+    color: $grey;
+    justify-content: space-between;
+
+    @include media900 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+.product__left-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__left-text {
+    font-size: 18px;
+    line-height: 170%;
+    max-width: 386px;
+    margin-top: 296px;
+    height: 298px;
+
+    @include media1200 {
+        font-size: 16px;
+    }
+
+    @include media900 {
+        margin-top: 0px;
+        max-width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+.product__center-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.product__choose-link {
+    max-width: 270px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4.16px;
+    text-transform: uppercase;
+    color: #FFF;
+    border-radius: 100px;
+    background: #515076;
+    padding: 27px 27px;
+    margin-bottom: 96px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    @include media900 {
+        margin-bottom: 0px;
+        max-width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.product__center-text {
+    font-size: 18px;
+    line-height: 170%;
+    max-width: 391px;
+
+    @include media1200 {
+        font-size: 16px;
+    }
+
+    @include media900 {
+        margin-bottom: 0px;
+        max-width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+.product__right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.product__right-symbol {
+    font-family: Work Sans;
+    font-size: 36.8px;
+    font-weight: 300;
+    line-height: 179.99%;
+    letter-spacing: 11.04px;
+    text-transform: uppercase;
+
+    @include media900 {
+        display: none;
+    }
+}
+
+.product__right-text {
+    max-width: 172px;
+    text-align: right;
+
+    font-weight: 500;
+    line-height: 179.99%;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin-bottom: 97px;
+
+    @include media900 {
+        margin-bottom: 30px;
+        max-width: 100%;
+        height: 100%;
+        text-align: center;
+
+    }
+}
+
+.product__right-subtitle {
+    max-width: 350px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 109.4%;
+    color: $title;
+    margin-right: 67px;
+
+    @include media900 {
+        margin-bottom: 0px;
+        max-width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-right: 0px;
+
+    }
+
+
+    @include media500 {
+        font-size: 24px;
+    }
+}

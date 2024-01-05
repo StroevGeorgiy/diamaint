@@ -1,0 +1,141 @@
+.top {
+    padding: 128px 0 490px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    @include media1200 {
+        padding: 68px 0 490px;
+    }
+
+    @include media900 {
+        padding: 0px 0 60px;
+    }
+}
+
+.decore1 {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: -100px;
+    background: url(./../images/top/decore1.png);
+    width: 1455px;
+    height: 1113px;
+    z-index: -2;
+
+    @include media1400 {
+        display: none;
+    }
+}
+
+
+.decore2 {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translatey(-50%);
+    background: url(./../images/top/decore2.png) no-repeat;
+    width: 976px;
+    height: 648px;
+    z-index: -1;
+
+    @include media900 {
+        display: none;
+    }
+}
+
+
+.top__title {
+    font-family: Playfair Display;
+    font-size: 230px;
+    line-height: 92.4%;
+    margin-bottom: 60px;
+
+    @include media1200 {
+        font-size: 110px;
+        text-align: center;
+    }
+
+    @include media500 {
+        font-size: 75px;
+    }
+}
+
+.top__inner {
+    display: flex;
+    padding-bottom: 54px;
+
+
+    @include media900 {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+}
+
+.top__text-left {
+    max-width: 387px;
+    color: #63678C;
+    font-size: 36px;
+    line-height: 132.675%;
+    margin-right: 108px;
+
+    @include media900 {
+        font-size: 24px;
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.top__text-right {
+    display: flex;
+    flex-direction: column;
+    color: #828282;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 170%;
+}
+
+.top__right-block1 {
+    max-width: 391px;
+    height: 114px;
+    margin-bottom: 15px;
+
+
+    @include media900 {
+        height: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    span {
+        color: $grey;
+        text-decoration-line: none;
+
+    }
+}
+
+.top__right-block2 {
+    max-width: 391px;
+    height: 176px;
+
+    @include media900 {
+        height: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+.top__right-block3 {
+    max-width: 391px;
+    height: 186px;
+
+    @include media900 {
+        height: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}

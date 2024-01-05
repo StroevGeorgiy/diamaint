@@ -1,0 +1,21 @@
+// base 
+
+@import './base/reset';
+@import './base/mixin';
+@import './base/var';
+@import './base/base';
+
+
+// main
+@import './blocks/header';
+@import './blocks/burger';
+@import './blocks/footer';
+@import './blocks/top';
+@import './blocks/product';
+@import './blocks/choose';
+@import './blocks/stock';
+@import './blocks/discount';
+@import './blocks/diamaint';
+@import './blocks/tip';
+
+

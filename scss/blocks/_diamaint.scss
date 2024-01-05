@@ -1,0 +1,199 @@
+.diamaint {
+    padding-bottom: 84px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+
+    @include media1400 {
+        padding-bottom: 0px;
+    }
+
+    &::after {
+        content: "";
+        left: 0;
+        top: 200px;
+        z-index: -2;
+        position: absolute;
+        background: #EDECF6;
+        width: 1937px;
+        height: 1023px;
+
+        @include media1400 {
+            display: none;
+
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: -150px;
+        top: 300px;
+        z-index: -1;
+        position: absolute;
+        background: url(./../images/diamaint/decore6.png) no-repeat;
+        width: 780px;
+        height: 1294px;
+
+        @include media1400 {
+            display: none;
+
+        }
+    }
+}
+
+
+
+
+.diamaint__title {
+    font-family: Playfair Display;
+    font-size: 330px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.4%;
+    text-align: center;
+    color: #D6D4E7;
+    margin-bottom: 27px;
+
+
+    @include media1400 {
+        font-size: 220px;
+    }
+
+    @include media1200 {
+        font-size: 110px;
+    }
+
+    @include media500 {
+        font-size: 75px;
+    }
+}
+
+.diamaint__inner {
+    display: flex;
+    margin-bottom: 194px;
+
+    @include media1200 {
+        justify-content: center;
+        margin-bottom: 84px;
+    }
+
+}
+
+.diamaint__img-box {
+    position: relative;
+    overflow: hidden;
+    height: 819px;
+
+    @include media1200 {
+        display: none;
+    }
+
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 100px;
+        width: 545.903px;
+        height: 546.612px;
+        background: #D6D4E7;
+        z-index: -1;
+        border-radius: 50%;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 90px;
+        right: 240px;
+        width: 174px;
+        height: 177px;
+        background: url(./../images/diamaint/berries.png);
+        z-index: 1;
+        
+    }
+}
+
+.diamaint__img-blur {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    left: -175px;
+    top: 500px;
+    width: 1012.287px;
+    height: 529.655px;
+
+    background: #EDECF6;
+    filter: blur(48.98164367675781px);
+    overflow: hidden;
+
+    @include media1400 {
+        background: #fff;
+        top: 500px;
+        width: 1012.287px;
+        height: 529.655px;
+
+    }
+}
+
+
+.diamaint__img {
+    min-width: 860px;
+}
+
+.diamaint__content {
+    margin-top: 112px;
+    display: flex;
+    flex-direction: column;
+    max-width: 462px;
+
+    @include media1200 {
+        margin-top: 0px;
+        max-width: 100%;
+        text-align: center;
+
+    }
+}
+
+.diamaint__content-uptitle {
+    font-weight: 500;
+    line-height: 179.99%;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    color: #A5A3B9;
+    max-width: 343px;
+
+    @include media1200 {
+        max-width: 100%;
+    }
+}
+
+.diamaint__content-title {
+    font-size: 70px;
+    font-weight: 200;
+    line-height: 109.4%;
+    margin-bottom: 61px;
+
+
+    @include media1200 {
+        align-self: center;
+        max-width: 306px;
+        margin-bottom: 21px;
+    }
+
+    span {
+        color: $main;
+        font-size: 120px;
+        text-decoration-line: none;
+        font-weight: 300;
+        line-height: 109.4%;
+    }
+}
+
+.diamaint__content-text {
+    font-weight: 500;
+    line-height: 199.99%;
+    color: $grey;
+}

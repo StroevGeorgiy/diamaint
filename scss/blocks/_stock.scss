@@ -1,0 +1,189 @@
+.stock {
+    padding-bottom: 131px;
+    position: relative;
+    z-index: 1;
+
+    @include media900 {
+        padding-bottom: 71px;
+
+    }
+}
+
+.stock__inner {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    @include media1200 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.stock__content {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+
+    @include media1200 {
+        margin-right: 0px;
+    }
+
+    @include media900 {
+        padding-top: 40px;
+    }
+}
+
+.stock__title {
+    margin-bottom: 100px;
+
+    @include media1200 {
+        margin-bottom: 50px;
+    }
+
+
+    @include media500 {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+.stcok__content-text {
+    max-width: 333px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 199.99%;
+    color: $grey;
+    height: 198px;
+    margin-bottom: 49px;
+
+
+    @include media1200 {
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+}
+
+.swiper {
+    position: relative;
+    user-select: none;
+    width: 810px;
+    height: 801px;
+    padding: 140px 0px;
+    margin: 0;
+
+    @include media900 {
+        width: 610px;
+        height: 541px;
+        padding: 80px 0px;
+    }
+
+    @include media600 {
+        display: none;
+    }
+
+    &::before {
+        position: absolute;
+        content: "для нормальной кожи";
+        color: #fff;
+        text-align: start;
+        writing-mode: vertical-rl;
+        transform: scale(-1);
+        padding: 40px 10px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 199.99%;
+        letter-spacing: 2.21px;
+        text-transform: uppercase;
+        width: 810px;
+        height: 521px;
+        background: $main;
+        z-index: -10;
+        top: 180px;
+        left: -40px;
+
+        @include media900 {
+            display: none;
+        }
+    }
+}
+
+
+.swiper-wrapper {
+    position: relative;
+    width: 810px;
+    height: 521px;
+
+    @include media900 {
+        width: 610px;
+        height: 421px;
+    }
+
+
+    top: 50%;
+    transform: translatey(-50%);
+
+
+}
+
+.swiper-slide {
+    width: 810px;
+    height: 521px;
+    background-position: center;
+    background-size: cover;
+    background-color: #F7F7FA;
+
+
+    @include media900 {
+        width: 610px;
+        height: 421px;
+    }
+
+
+    img {
+        display: block;
+        width: 100%;
+
+    }
+}
+
+.swiper__buttons {
+    position: relative;
+    display: flex;
+    width: 187px;
+    user-select: none;
+}
+
+.swiper-button-next {
+    width: 74px;
+    height: 74px;
+
+    @include media1200 {
+        display: none;
+    }
+}
+
+.swiper-button-prev {
+    width: 74px;
+    height: 74px;
+
+    @include media1200 {
+        display: none;
+    }
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: none;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: none;
+}

@@ -1,0 +1,157 @@
+.choose {
+    position: relative;
+    padding-bottom: 40px;
+    z-index: 1;
+}
+
+
+
+.choose__title {
+    margin-bottom: 80px;
+
+    @include media900 {
+        margin-bottom: 30px;
+    }
+}
+
+
+.choose__inner {
+    display: flex;
+    align-items: end;
+    column-gap: 30px;
+    justify-content: center;
+
+    @include media900 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+
+
+.choose__small {
+    background: #F7F7FA;
+    max-width: 329px;
+    height: 521px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        background: rgba(82, 81, 118, .3);
+    }
+
+
+
+}
+
+
+
+.choose__small-img {
+    margin: 62px 20px 0px;
+}
+
+.choose__subtitle {
+    color: #A5A3B9;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 199.99%;
+    letter-spacing: 2.76px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.choose__small-content {
+    margin: 18px 38px 0px;
+
+    @include media1200 {
+        display: flex;
+        flex-direction: column;
+        margin: 9px 16px 25px;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+.choose__text {
+    font-size: 20px;
+    line-height: 135.99%;
+    height: 64px;
+    margin-bottom: 22px;
+}
+
+.choose__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose__small-pricetag {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 135.99%;
+}
+
+.choose__price-basket {}
+
+.choose__big {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    background: #F7F7FA;
+    height: 600px;
+    position: relative;
+
+    @include media900 {
+        max-width: 329px;
+        height: 521px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(./../images/choose/discount.svg);
+        top: 0;
+        left: 0;
+        width: 69px;
+        height: 69px;
+        margin: 20px;
+    }
+
+    &:hover {
+        background: rgba(82, 81, 118, .3);
+    }
+
+
+}
+
+.choose__big-content {
+    margin: 9px 44px 0px;
+
+    @include media1200 {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 22px 25px;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+.choose__big-img {
+    margin: 69px 20px 0;
+}
+
+.choose__big-pricetag {
+    color: rgba(81, 80, 118, 0.80);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 135.99%;
+}
+
+span {
+    color: rgba(81, 80, 118, 0.60);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 135.99%;
+    text-decoration-line: line-through;
+}
